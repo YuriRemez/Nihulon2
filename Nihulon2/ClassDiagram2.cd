@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Nihulon2.SupervisorsAdministration.SupervisorAdministration_View" BaseTypeListCollapsed="true">
+    <Position X="9" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>9VMAVJYgUiYLKJ0xMQmMARKXAIAAwpsABAoBEUIQAkA=</HashCode>
+      <FileName>SupervisorsAdministration\SupervisorAdministration_View.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Nihulon2.SupervisorsAdministration.SupervisorsAdministration_Controller">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAGAADAACAABAIAABAAABAAAACgYBCSACKAABACkggA=</HashCode>
+      <FileName>SupervisorsAdministration\SupervisorsAdministration_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.RelationsList.RelationsList_Controller">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgDAAAAAEAAAAAAAAAgAAAAAIAAAEBCAAAAAAAAA=</HashCode>
+      <FileName>RelationsList\RelationsList_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.Main_View">
+    <Position X="5.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAQCKAACAEAAAAAACABAAKQAAAAAAAAAAYAUgAAAA=</HashCode>
+      <FileName>Main_View.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Nihulon2.SupervisorsAdministration.ISupervisorsAdministrationView">
+    <Position X="3.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAgAAAAAAAgAAEAAAIAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>SupervisorsAdministration\ISupervisorsAdministrationView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Nihulon2.RelationsList.IRelationsListView">
+    <Position X="5.75" Y="5.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAIAAAAAABIAAACAAAAAAAA=</HashCode>
+      <FileName>RelationsList\IRelationsListView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

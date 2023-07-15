@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Nihulon2.SupervisorsAdministration.frmChangeExam">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="Nihulon2.SupervisorsAdministration.frmChangeExam.saveChangesHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SupervisorsAdministration\frmChangeExam.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAAAAAYAAGwAABEAQAiAIBACAAAAAABEEAACQEAAwGA=</HashCode>
+      <FileName>SupervisorsAdministration\frmChangeExam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.SupervisorsAdministration.frmGetNameOfExcelFile">
+    <Position X="3" Y="0.5" Width="2" />
+    <NestedTypes>
+      <Delegate Name="Nihulon2.SupervisorsAdministration.frmGetNameOfExcelFile.fileNameConfirmedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SupervisorsAdministration\frmGetNameOfExcelFile.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABEAQACAAEACBAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>SupervisorsAdministration\frmGetNameOfExcelFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.SupervisorsAdministration.SortableBindingList&lt;T&gt;">
+    <Position X="7.5" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAEAAAAAAAABAAAAMAAgAAAAAAAAAMAA=</HashCode>
+      <FileName>SupervisorsAdministration\SortableBindingList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.Model.DbAccess.DbAccess">
+    <Position X="5.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAAAAAAAAIAAAAAAAAAAAAAAEgAIAAA=</HashCode>
+      <FileName>Model\DbAccess\DbAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.Model.Exam">
+    <Position X="5.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAwAAUAAAgIAAAAAAEAAQIAAAAAAhAAABAAAAIAE=</HashCode>
+      <FileName>Model\Exam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.Model.RelatedItem">
+    <Position X="3" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAQAAAAAAAEAAAQAAAAAAAA=</HashCode>
+      <FileName>Model\RelatedItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nihulon2.RelationsList.RelationsList_View" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>FAAACAAAACAgAAAAAASCAAKCAAAACDIAAACAEEEAAEA=</HashCode>
+      <FileName>RelationsList\RelationsList_View.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Nihulon2.Program">
+    <Position X="3" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

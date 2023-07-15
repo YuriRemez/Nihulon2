@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A656C95E-FC12-4354-9038-E26124600732}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nihulon2</RootNamespace>
+    <AssemblyName>Nihulon2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.5.3.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.2\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.0.0.999, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.0.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Model\Course.cs" />
+    <Compile Include="Model\DbAccess\DbAccess.cs" />
+    <Compile Include="Model\DbAccess\DbConnector.cs" />
+    <Compile Include="Model\RelatedItem.cs" />
+    <Compile Include="RelationsList\frmChooseDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelationsList\frmChooseDivision.Designer.cs">
+      <DependentUpon>frmChooseDivision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelationsList\IRelationsListView.cs" />
+    <Compile Include="RelationsList\RelationsList_Controller.cs" />
+    <Compile Include="SupervisorsAdministration\frmChangeExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupervisorsAdministration\frmChangeExam.Designer.cs">
+      <DependentUpon>frmChangeExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorsAdministration\frmDataForLoadingFromOrbit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupervisorsAdministration\frmDataForLoadingFromOrbit.Designer.cs">
+      <DependentUpon>frmDataForLoadingFromOrbit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorsAdministration\frmSplitRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupervisorsAdministration\frmSplitRooms.Designer.cs">
+      <DependentUpon>frmSplitRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorsAdministration\ISupervisorsAdministrationView.cs" />
+    <Compile Include="SupervisorsAdministration\SortableBindingList.cs" />
+    <Compile Include="SupervisorsAdministration\SupervisorsAdministration_Controller.cs" />
+    <Compile Include="Model\Exam.cs" />
+    <Compile Include="Main_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_View.Designer.cs">
+      <DependentUpon>Main_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupervisorsAdministration\SupervisorAdministration_View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SupervisorsAdministration\SupervisorAdministration_View.Designer.cs">
+      <DependentUpon>SupervisorAdministration_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelationsList\RelationsList_View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RelationsList\RelationsList_View.Designer.cs">
+      <DependentUpon>RelationsList_View.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main_View.resx">
+      <DependentUpon>Main_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RelationsList\frmChooseDivision.resx">
+      <DependentUpon>frmChooseDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupervisorsAdministration\frmChangeExam.resx">
+      <DependentUpon>frmChangeExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupervisorsAdministration\frmDataForLoadingFromOrbit.resx">
+      <DependentUpon>frmDataForLoadingFromOrbit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupervisorsAdministration\frmSplitRooms.resx">
+      <DependentUpon>frmSplitRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupervisorsAdministration\SupervisorAdministration_View.resx">
+      <DependentUpon>SupervisorAdministration_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelationsList\RelationsList_View.resx">
+      <DependentUpon>RelationsList_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
